@@ -861,9 +861,8 @@ flex-wrap: wrap;
 }
 
 .card-info-paragraph {
-
 position: absolute;
-  display: inline-block;
+  display: block;
   bottom: 0;
   left: 0;
 width: 100%;
