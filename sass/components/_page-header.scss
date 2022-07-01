@@ -65,7 +65,9 @@
 }
 
 .contacts {
- @extend %flex-centred;
+display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
  @extend %list;
 }
 

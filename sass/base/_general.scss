@@ -23,6 +23,7 @@
 }
 
 .section__title {
+  @extend %title;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -79,4 +80,42 @@
 .sm-list {
   display: flex;
   @extend %list;
+}
+
+.footer-sm__title,
+.products__text,
+.subscription__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $tertiary-text-color;
+}
+
+.btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 200px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  font-family: inherit;
+  color: $tertiary-text-color;
+  background-color: $accent-color;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px  rgba(0, 0, 0, 0.15);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: #188CE8;
+  }
 }
